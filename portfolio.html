@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi sitio CV</title>
+        <link href="css/css-gg.css" rel="stylesheet" /><!--Todos los estilos-->
+        <link rel="shortcut icon" href="resources/logo.svg" type="image/svg">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+        <div class="main-content">
+            <aside>
+                <div class="profile"> 
+                    <img src="resources/photo.jpg" id="photo-profile" class="my-photo"/>
+                    <div>
+                        <h1 class="title">Fátima Pérez Jiménez</h1>
+                        <div class="badge-porfile">Programadora</div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/share/1BC73F7TtM/" target="_blank" class="gg-facebook"></a>
+                            <a href="https://x.com/?lang=es" target="_blank" class="gg-twitter"></a>
+                            <a href="https://www.instagram.com/f.tam.i?igsh=MWpmMnZyY3M2N2k3cw==" target="_blank" class="gg-instagram"></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <ul class="contacts-block">
+                            <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp; 03 de abril del 2004</li>
+                            <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp; Puebla, Puebla</li>
+                            <li class="contacts-block-item"><i class="gg-mail"></i>&nbsp;&nbsp;<a href="mailto:jvale4582@gmail.com">&nbsp;&nbsp;jvale4582@gmail.com</a></li>
+                            <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+52 27 47 68 10</li>
+                        </ul>
+                        <a  class="btn" href="/media/CV_Fátima Pérez J..pdf">Descargar CV</a>
+                    </div>
+                </div>
+            </aside>
+            <section class="resume">
+                <header>
+                    <div class="menu-circle">
+                        <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                    </div>
+                    <div class="inner-menu js-menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="index.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html">Portafolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+               <h2 class="title bordered">Portfolio</h2>
+               <div class="portfolio">
+                <img src="/resources/img1.JPG" onclick="showImage(this)">
+                <img src="/resources/img2.JPG" onclick="showImage(this)">
+                <img src="/resources/img3.JPG" onclick="showImage(this)">
+                <img src="/resources/img4.jpg" onclick="showImage(this)">
+                <img src="/resources/img5.jpg" onclick="showImage(this)">
+                <div class="modal" id="preview">
+                    <button class="close-btn" onclick="cerrarModal()">
+                        <span class="gg-close"></span>
+                    </button>
+                </div>
+            </div>
+            
+            </section>
+        </div>
+        <footer>Autor: Jenny Ortega García</footer>
+        <div id="copyrigth" style="display: none;">2024 Jenny estuvo aqui.</div>
+    </body>
+</html>
